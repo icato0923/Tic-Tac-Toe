@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5E7E355-4F64-4979-B7B6-B561A20683AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tic_Tac_Toe</RootNamespace>
+    <AssemblyName>Tic Tac Toe</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GameScreen.Designer.cs">
+      <DependentUpon>GameScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameScreen.resx">
+      <DependentUpon>GameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TH_25121916_25131916_25126916_25136916_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404205362310777.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404205780685225.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-tic-tac-toe-bitmap-computer-icons-bmp-file-format-5b212cde520e92.4886368715289008303361.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404211713159864.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computerIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404212492213878.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404212306015720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404212313188042.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404210604888842.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404488307288989.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404647405550022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404647527656341.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404647510984674.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404647442854567.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404647425430247.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext404648371374399.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
